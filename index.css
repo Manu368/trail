@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.bg-container01{
+    background-color: #323f4b;
+    background-size: cover;
+}
+.card{
+    background-image: linear-gradient(180deg,#1c0036,#2e0057 50%,#42007d) !important;
+}
+.game-heading{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+    .card{
+        background-image: linear-gradient(180deg,#1c0036,#2e0057 50%,#42007d) !important;
+        margin: 0px 100px 0px 100px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .card{
+        background-image: linear-gradient(180deg,#1c0036,#2e0057 50%,#42007d) !important;
+    }
+    
+}
+.modal-body, .modal-title{
+    color: #fff !important;
+}
+.modal-content{
+    background-color: #1a0031 !important;
+}
+.button01{
+    background-color: #502da8;
+    color: #fff;
+    width: 80px;
+    height: 40px;
+    border: 0px;
+}
+.button02{
+    background-color: #936ef0;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    border: 0px;
+}
+.game-video{
+    background-color: #936ef0;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    border: 0px;
+}
+
+
+ .head-button, .tail-button{
+    background-color: #500097;
+    width: 120px;
+    height: 40px;
+    color:#fff;
+    border: 1px solid #500097;
+    text-transform: uppercase;
+    opacity: 0.7;
+ }
+ .head-button:hover, .tail-button:hover{
+    opacity:0.7;
+    background-color: #6f42c1;
+ }
+#manu{
+    color: #fff;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+    font-size: 32px;
+    text-transform: capitalize;
+}
+.label01{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color:#fff;
+}
+.btn01{
+    background-color: transparent !important;
+}
+.man01, .man02{
+    background-color: transparent !important;
+    color: #fff !important;
+}
+.manu01{
+    width: 100% !important;
+}
+
+
+
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+  }
+  .computer img,
+  .player img {
+    width: 75%;
+  }
+  .shakeComputer {
+    animation: shakeComputer 0.8s linear;
+  }
+  .shakePlayer {
+    animation: shakePlayer 0.8s linear;
+  }
+
+
+  @keyframes shakeComputer {
+    0% {
+      transform: rotate(-30deg);
+    }
+    25% {
+      transform: rotate(30deg);
+    }
+    50% {
+      transform: rotate(-30deg);
+    }
+    75% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes shakePlayer {
+    0% {
+      transform: rotate(30deg);
+    }
+    25% {
+      transform: rotate(-30deg);
+    }
+    50% {
+      transform: rotate(30deg);
+    }
+    75% {
+      transform: rotate(-30deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  
+.options button {
+    background: none;
+    color: #fff;
+    font-family: "Poppins";
+    border: 1px solid #fff;
+    padding:10px;
+    border-radius: 7px;
+    width: 100px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.2s all linear;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .options button:hover {
+    background-color: darkcyan;
+    border: 1px solid darkcyan;
+  }
+
+  .popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .popup-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .popup-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #52bdf7;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Rock Paper Scissor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/021c70449c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bg-container01 pt-5 pb-5">
+                <div class="card pb-5">
+                    <div class="card-body">
+                        <div class="text-left">
+                      <h5 class="game-heading pt-3 pl-3">Rock Paper Scissor</h5>
+                    </div>
+                      <div class="text-right">
+                        <a href="https://www.youtube.com/watch?v=q7DZnWb0Ukw" target="_blank">
+                          <button class="game-video btn-primary mb-5">How To Play</button>
+                        </a>
+                        <!-- Button trigger modal -->
+<button type="button" class="button02 mb-5" data-toggle="modal" data-target="#exampleModal">
+    Game Info
+  </button>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Rock Paper Scissor</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+        <div class="modal-body">
+            A classic two-person game. Players start each round by saying, “rock, paper, scissors, shoot!” On “shoot,” each player holds out their fist for rock, flat hand for paper, or their index and middle finger for scissors. Rock crushes scissors, scissors cut paper, and paper covers rock. See who wins each round!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button01" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                      </div>
+                      <div class="text-center">
+                        <p id="manu" class="mb-5"></p>
+                        <div class="images mb-5">
+                            <div class="computer">
+                              <img src="./stoneComputer.png">
+                            </div>
+                            <div class="player">
+                              <img src="./scissorsPlayer.png">
+                            </div>
+                          </div>
+                        <div data-v-4f258ed8="" class="form-row justify-content-center mt-5">
+                          <div data-v-4f258ed8="" class="form-group col-lg-4 text-center mt-5">
+                            <label data-v-4f258ed8="">Bet amount</label> 
+                            <div data-v-4f258ed8="" class="input-group">
+                              <input data-v-4f258ed8="" type="text" class="form-control text-center man01 ml-3" id="userValue01"> 
+                              <div data-v-4f258ed8="" class="input-group-append">
+                                <button data-v-4f258ed8="" type="button" class="btn btn-outline-light btn-sm border-right-0 btn01">min</button> 
+                                <button data-v-4f258ed8="" type="button" class="btn btn-outline-light btn-sm border-right-0" id="decre">-10</button> 
+                                <button data-v-4f258ed8="" type="button" class="btn btn-outline-light btn-sm border-right-0" id="incre">+10</button> 
+                                <button data-v-4f258ed8="" type="button" class="btn btn-outline-light btn-sm mr-3">max</button>
+                              </div>
+                            </div>
+                          </div> 
+                          <div data-v-4f258ed8="" class="form-group col-lg-2 text-center mt-5">
+                            <label data-v-4f258ed8="">Balance</label> 
+                            <div data-v-4f258ed8="" class="input-group man02">
+                              <input data-v-4f258ed8="" type="text" disabled="disabled" class="form-control rounded text-center man02 mr-3 ml-3"> 
+                              <div data-v-4f258ed8="" class="invalid-feedback" style="display: none;">
+                          Insufficient balance
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="options">
+                    <div class="d-flex flex-row justify-content-center">
+                  <button type="button" class="mt-4 mr-3" >stone</button>
+                  <button type="button" class="mt-4 mr-3" >paper</button>
+                  <button type="button" class="mt-4" >scissors</button>
+                </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup-container">
+                    <div class="popup-content">
+                      <img class="popup-image" src="https://cdn.vectorstock.com/i/preview-1x/97/07/hand-game-rock-scissors-paper-rules-gestures-vector-21419707.jpg">
+                      <button class="popup-close-button">Close</button>
+                    </div>
+                  </div>
+                  
+            </div>
+
+<script>
+
+
+const computer = document.querySelector(".computer img");
+const player = document.querySelector(".player img");
+const options = document.querySelectorAll(".options button");
+const resul = document.getElementById("manu");
+
+const shakeSound = new Audio("rocktheme.mp3");
+const winSound = new Audio("winner.mp3");
+const loseSound = new Audio("loser.mp3");
+var drawSound = new Audio("gamedraw.mp3");
+
+options.forEach((option) => {
+  option.addEventListener("click", () => {
+    resul.innerHTML = "";
+    computer.classList.add("shakeComputer");
+    player.classList.add("shakePlayer");
+
+    shakeSound.play();
+
+    setTimeout(() => {
+      computer.classList.remove("shakeComputer");
+      player.classList.remove("shakePlayer");
+
+      player.src = "./" + option.innerHTML + "Player.png";
+
+      const choice = ["stone", "paper", "scissors"];
+      let arrayNo = Math.floor(Math.random() * 3);
+      let computerChoice = choice[arrayNo];
+      computer.src = "./" + computerChoice + "Computer.png";
+
+      if (option.innerHTML === computerChoice) {
+        resul.innerHTML = "<span style='color: yellow;'>Draw</span>";
+        drawSound.play();
+      } else if (
+        (option.innerHTML === "stone" && computerChoice === "scissors") ||
+        (option.innerHTML === "paper" && computerChoice === "stone") ||
+        (option.innerHTML === "scissors" && computerChoice === "paper")
+      ) {
+        resul.innerHTML = "<span style='color: green;'>Congratulations! You Won</span>";
+        winSound.play();
+      } else {
+        resul.innerHTML = "<span style='color: red;'>You Lose</span>";
+        loseSound.play();
+      }
+    }, 1000);
+  });
+});
+
+const popupContainer = document.querySelector(".popup-container");
+const popupCloseButton = document.querySelector(".popup-close-button");
+
+popupCloseButton.addEventListener("click", () => {
+  popupContainer.style.display = "none";
+});
+
+
+
+
+let a = document.getElementById("userValue01");
+let b = document.getElementById("decre");
+let c = document.getElementById("incre");
+
+
+b.addEventListener("click", decrement01);
+
+function decrement01(){
+  let previous = a.value;
+  let new01 = parseInt(previous) - 10;
+  a.value = new01;
+
+}
+c.addEventListener("click", increment01);
+
+function increment01(){
+  let previous = a.value;
+  let new01 = parseInt(previous) + 10;
+  a.value = new01;
+
+}
+</script>
+</body>
+</html>
